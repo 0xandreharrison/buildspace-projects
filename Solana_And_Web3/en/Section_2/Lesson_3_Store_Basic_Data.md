@@ -86,7 +86,7 @@ First we've got `[account(init, payer = user, space = 9000)]`. **All we're doing
 
 1. `init` will tell Solana to create a new account owned by our current program.
 2. `payer = user` tells our program who's paying for the account to be created. In this case, it's the `user` calling the function. 
-3. We then say `space = 9000` which will allocate 9000 bytes of space for our account. You can change this # if you wanted, but, 9000 bytes is enough for the program we'll be building here!
+3. We then say `space = 9000` which will allocate 9000 bytes of space for our account. You can change this # if you want, but 9000 bytes is enough for the program we'll be building here!
 
 Why are we paying for an account? Well — storing data isn't free! How Solana works is users will pay "rent" on their accounts. You can read more on it [here](https://docs.solana.com/developing/programming-model/accounts#rent) and how rent is calculated. Pretty wild, right? If you don't pay rent, validators will clear the account!
 
